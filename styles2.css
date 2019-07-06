@@ -128,18 +128,40 @@ section article p {
 }
 .resume-section {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 100%;
-}
-.resume-article {
+	background-color: #2E5A7B;
 	margin-top: 5%;
-	font-size: 1rem;
+	padding-bottom: 2%;
 }
-.resume-figure {
-	max-width: 100%;
-	justify-content: center;
+.resume-article{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 }
-.resume-figure img {
+.resume-article h2{
+	text-align: center;
+	color: #ffffff;
+	width: 80%;
+	margin: auto;
+	font-size: 1.5rem;
+	padding-top: 2%;
+}
+.resume-article p{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-size: .75rem;
+}
+.resume-article a {
+	text-align: center;
+}
+.resume-article img{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 5%;
+}
+img {
 	max-width: 100%;
 	justify-content: center;
 }
