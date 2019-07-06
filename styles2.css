@@ -121,6 +121,28 @@ section article p {
 .about-article-mobile {
     padding-bottom: 6%;
 }
+#resume main {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+.resume-section {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.resume-article {
+	margin-top: 5%;
+	font-size: 1rem;
+}
+.resume-figure {
+	max-width: 100%;
+	justify-content: center;
+}
+.resume-figure img {
+	max-width: 100%;
+	justify-content: center;
+}
 figure {
     margin-top: 10%;
     display: flex;
