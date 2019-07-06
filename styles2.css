@@ -585,6 +585,9 @@ form {
 	.resume-p-desktop {
 		width: 40%;
 	}
+	h1 {
+		padding-bottom: 2%;
+	}
 }
 /*------ End 720px media query-----*/
 /*------ Start 860px media query-----*/
@@ -604,9 +607,6 @@ form {
 		}
 		.resume-p-desktop {
 			width: 60%;
-		}
-		.resume-header h1 {
-			padding-bottom: 2%;
 		}
 }
 /*------ End 860px media query-----*/
