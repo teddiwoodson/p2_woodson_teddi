@@ -94,7 +94,7 @@ a {
     text-decoration: none;
     color: #2E5A7B;
 }
-h2 {
+article h2 {
     color: #2E5A7B;
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -147,10 +147,10 @@ figcaption {
 }
 .buttons-mobile p {
     font-family: 'Roboto Slab', serif;
-    color:#2E5A7B;
+    color:#B7CCDB;
 }
 .buttons-mobile a {
-    background-color: #ffffff;
+    background-color: #2E5A7B;
     color: #2E5A7B;
     display: block;
     padding: 5%;
@@ -167,11 +167,12 @@ figcaption {
 }
 .buttons-mobile a:visited {
     text-decoration: none;
-    color:#B7CCDB;
+    color:#ffffff;
 }
 .buttons-mobile a:hover {
-    background-color: #2E5A7B;
+    background-color: #ffffff;
     text-decoration:none;
+		color: #B7CCDB;
 }
 footer {
     width: 90%;
@@ -387,3 +388,85 @@ footer p {
 
 @media (min-width:1050px) {
 }
+/*--------------------------------------contact form*/
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: #2E5A7B;
+}
+#contact-form {
+	color: #ffffff;
+	display:flex;
+	margin: auto;
+	margin-top: 20%;
+	text-align: center;
+	width: 100%;
+}
+#contact-form h2{
+	font-size: 1.4rem;
+	padding: 2%;
+}
+#contact-form p{
+	font-size: .75rem;
+	width: 70%;
+	padding: 2%;
+}
+.form-container {
+	width: 80%;
+}
+#contact-form label span {
+	color:#ffffff;
+	display:block;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: left;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea {
+	width:100%;
+	background:#ffffff;
+	padding:2%;
+	border-radius:5px;
+}
+#contact-form input {
+	font-family: 'Roboto', sans-serif;
+}
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+	font-family: 'Roboto', sans-serif;
+}
+#contact-form button[type="submit"] {
+	cursor:pointer;
+	width:40%;
+	border:none;
+	background:#B7CCDB;
+	color:#FFF;
+	margin-top: 3%;
+	margin-bottom: 5%;
+	padding: 5%;
+	border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+	background-color: #ffffff;
+	color: #2E5A7B;
+}
+::-webkit-input-placeholder {
+    color:#888;
+}
+:-moz-placeholder {
+    color:#888;
+}
+::-moz-placeholder {
+    color:#888;
+}
+:-ms-input-placeholder {
+    color:#888;
+}
+/*---------------------------------------contact form*/

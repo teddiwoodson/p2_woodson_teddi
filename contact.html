@@ -5,7 +5,7 @@
 
 		<meta charset="utf-8">
 
-		<title>Design</title>
+		<title>Contact</title>
 
 		<link type="text/css" rel="stylesheet" href="styles2.css" />
 
@@ -33,7 +33,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="design.html">Design</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -42,32 +42,44 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="design.html">Design</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="resume.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
         </header>
 
         <main class="site-content">
-            <section>
-
+            <section class="contact-form">
+							<!-- Form -->
+							<form id="contact-form" action="/" method="post">
+								<h2 class="contact-form">I want to hear from you!</h2>
+								<p>Send me a message and I'll get back to you as soon as possible.</p>
+								<div class="form-container">
+								<div>
+									<label>
+										<span>Name:</span>
+										<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+									</label>
+								</div>
+								<div>
+									<label>
+										<span>Email:</span>
+										<input placeholder="Please enter your email address" type="email" tabindex="2" required>
+									</label>
+								</div>
+								<div>
+									<label>
+										<span>Message:</span>
+										<textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+									</label>
+								</div>
+								<div>
+									<button name="submit" type="submit" id="contact-submit">Send Email</button>
+								</div>
+							</div>
+							</form>
+							<!-- /Form -->
             </section>
-
-            <aside class="buttons-mobile">
-
-            <p><a href="design.html">Design</a></p>
-            <p><a href="resume.html">Resume</a></p>
-            <p><a href="resume.html">Contact</a></p>
-
-            </aside>
-
-            <aside class="buttons-desktop">
-
-            <p><a href="about.html">About</a></p>
-            <p><a href="resume.html">Resume</a></p>
-            <p><a href="contact.html">Contact</a></p>
-
-            </aside>
 
 
         </main>
@@ -79,6 +91,7 @@
         <script src="js/hamburger.js"></script>
 				<script src="js/backstretch.js"></script>
 				<script src="js/main.js"></script>
+				<script src="js/scripts.js"></script>
 
 	</body>
 
