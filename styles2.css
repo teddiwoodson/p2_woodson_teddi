@@ -140,17 +140,16 @@ section article p {
 	align-content: center;
 }
 .resume-article h2{
+	display: flex;
 	text-align: center;
 	color: #ffffff;
-	width: 80%;
 	margin: auto;
 	font-size: 1.5rem;
 	padding-top: 2%;
 }
 .resume-article p{
-	padding-top: 2%;
-	padding-bottom: 2%;
 	font-size: .75rem;
+	padding: 2%;
 }
 .resume-article a {
 	text-align: center;
@@ -159,7 +158,7 @@ section article p {
 	width: 90%;
 	margin: auto;
 	text-align: center;
-	padding-bottom: 5%;
+	padding-bottom: 2%;
 }
 img {
 	max-width: 100%;
@@ -317,7 +316,6 @@ form {
 .contact-footer {
 	margin-top: 2%;
 }
-}
 /*---------------------------------------contact form*/
 /*-------------------------------------Start media queries*/
 /*------ Start 400px media query-----*/
@@ -341,6 +339,9 @@ form {
 		#contact-form p{
 			width: 60%;
 			font-size: 1rem;
+		}
+		.resume-article h2 {
+			font-size: 2rem;
 		}
 }
 /*------ End 400px media query-----*/
