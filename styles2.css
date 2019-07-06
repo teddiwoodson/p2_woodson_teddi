@@ -1,0 +1,389 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/* FONT FAMILIES
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+body{
+    width: 100%;
+    display: flex;
+    background-image: url("images/cactus.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', serif;
+}
+.about-site {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #B7CCDB;
+}
+.site-content {
+    flex-grow:1;
+}
+header{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    padding-top: 5%;
+    align-items: baseline;
+    }
+/*----Start navigation----*/
+.desktop-menu {
+    display: none;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#2E5A7B;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#2E5A7B;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#ffffff;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#B7CCDB 1px solid;}
+.menu li:hover{display: block;    background:#B7CCDB; padding:15px 0 15px 0; border-bottom:#ffffff 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#2E5A7B;}
+.menu ul li a:hover {  color: #2E5A7B; text-decoration:none;}
+.menu a{text-decoration:none; color:#2E5A7B;}
+.menu a:hover{text-decoration:none; color:#ffffff;}
+header{display:inline-block; font-size:12px;}
+
+/*---End navigation---*/
+
+h1 {
+    color: #2E5A7B;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #2E5A7B;
+}
+h2 {
+    color: #2E5A7B;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 2rem;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.about-article-mobile h2 {
+    color: #ffffff;
+}
+section article p {
+    padding: 6% 6% 0% 6%;
+}
+.about-article-mobile {
+    padding-bottom: 6%;
+}
+figure {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img {
+    max-width: 50%;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    align-self: center;
+}
+figcaption {
+    text-align: center;
+    font-size: .75rem;
+    color: #ffffff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.buttons-desktop {
+    display: none;
+}
+.buttons-mobile p {
+    font-family: 'Roboto Slab', serif;
+    color:#2E5A7B;
+}
+.buttons-mobile a {
+    background-color: #ffffff;
+    color: #2E5A7B;
+    display: block;
+    padding: 5%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+}
+.buttons-mobile a:link {
+    text-decoration:none;
+    color: #B7CCDB;
+}
+.buttons-mobile a:visited {
+    text-decoration: none;
+    color:#B7CCDB;
+}
+.buttons-mobile a:hover {
+    background-color: #2E5A7B;
+    text-decoration:none;
+}
+footer {
+    width: 90%;
+    justify-content: center;
+    background-color: #2E5A7B;
+    color: white;
+    padding: 5%;
+}
+footer p {
+    font-family: 'Roboto Slab', serif;
+}
+/*------ Start 400px media query-----*/
+@media (min-width:400px) {
+    h1 {
+    font-size: 2.5rem;
+    }
+    .buttons-mobile p a {
+        font-size: 1.25rem;
+    }
+}
+/*------ End 400px media query-----*/
+/*------ Start 500px media query-----*/
+@media (min-width:500px) {
+    h1 {
+    font-size: 3rem;
+    }
+    .buttons-mobile a {
+        width: 40%;
+    }
+    .buttons-mobile p a {
+        font-size: 1.5rem;
+    }
+}
+/*------ End 400px media query-----*/
+
+/*------ Start 680px media query-----*/
+@media (min-width: 680px) {
+/*------------------start nav-----------------*/     
+    .about-site{
+    width: 100%;
+    background-size: cover;
+}
+    header{
+        width: 95%;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+         align-items: baseline;
+    }
+    .nav {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .menu, .hamburger, .cross {
+        display: none;
+    }
+    .desktop-menu {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+   ul li {
+       display: inline;
+       text-align: right;
+       padding-right: 4%;
+    }
+    ul li a {
+        text-decoration: none;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1rem;
+        color: #2E5A7B;
+    }
+    ul li:hover {
+        text-decoration: underline;
+    }
+/*------------------End nav-----------------*/   
+    header {
+        padding-top: 2%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        padding-bottom: 5%;
+    }
+    header h2, p {
+        display: block;
+    }
+    h2 {
+        padding-top: 2%;
+    }
+    p {
+        font-size: .8rem;
+    }
+    section article p {
+    padding: 3% 3% 0% 3%;
+}
+    article {
+        max-width: 50%;
+        padding-right: 5%;
+    }
+    section {
+    display: flex;
+    align-content: center;
+    background-color: #2E5A7B;
+    }
+    figure {
+        margin:0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    figcaption {
+        text-align: center;
+        color: white;
+        align-content: center;
+    }
+    img {
+        max-width: 65%;
+        padding: 0;
+    }
+    .buttons-mobile {
+        display: none;
+    }
+    .buttons-desktop {  
+        display:flex;
+        align-content: center;
+        justify-content: space-around;
+        margin: 5%;
+    }
+    .buttons-desktop p {
+        background-color:#2E5A7B;
+        font-family: 'Roboto Slab', serif;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+     .buttons-desktop p a {
+        text-decoration: none;
+         color: white;
+    }
+    .buttons-desktop p a:link {
+        text-decoration:none;
+        color: white;
+    }
+    .buttons-desktop p a:visited {
+        text-decoration: none;
+        color:white;
+}
+    .buttons-desktop p:hover {
+        background-color: #B7CCDB;
+        text-decoration:none;
+}
+    article p a{
+        background-color: #B7CCDB;
+        color: #2E5A7B;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-right: 14%;
+        padding-left: 14%;
+        font-family: 'Roboto Slab', serif;
+    }
+     article p a:link {
+        text-decoration: none;
+    }
+    article p a:hover {
+        background-color: white;
+        color: #2E5A7B;
+    }
+    footer {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+} 
+/*------ End 680px media query-----*/
+
+/*------ Start 860px media query-----*/
+@media (min-width:860px) {
+    .desktop-menu li a {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+/*------ End 860px media query-----*/
+
+/*------ Start 900px media query-----*/
+@media (min-width:900px) {
+     h1 {
+        font-size: 3rem;
+    }
+    section {
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1%;
+    }
+    figure {
+        max-width: 40%;
+        max-height: 40%;
+    }
+    article p {
+        padding: 10%;
+    }
+}
+/*------ End 900px media query-----*/
+
+@media (min-width:1050px) {
+}
