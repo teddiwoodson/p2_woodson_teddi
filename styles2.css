@@ -243,18 +243,17 @@ form {
 	color: #ffffff;
 	display:flex;
 	margin: auto;
-	margin-top: 15%;
 	text-align: center;
 	width: 100%;
 }
 #contact-form h2{
 	font-size: 1.4rem;
-	padding: 2%;
+	padding: 1%;
 }
 #contact-form p{
 	font-size: .75rem;
 	width: 70%;
-	padding: 2%;
+	padding: 1%;
 }
 .form-container {
 	width: 80%;
@@ -262,8 +261,8 @@ form {
 #contact-form label span {
 	color:#ffffff;
 	display:block;
-	padding-top: 2%;
-	padding-bottom: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	text-align: left;
 }
 
@@ -274,7 +273,7 @@ form {
 #contact-form textarea {
 	width:100%;
 	background:#ffffff;
-	padding:2%;
+	padding:1.25%;
 	border-radius:5px;
 }
 #contact-form input {
