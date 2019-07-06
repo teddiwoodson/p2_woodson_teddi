@@ -5,7 +5,7 @@
 
 		<meta charset="utf-8">
 
-		<title>About</title>
+		<title>Design</title>
 
 		<link type="text/css" rel="stylesheet" href="styles2.css" />
 
@@ -50,21 +50,31 @@
 
         <main class="site-content">
             <section>
+							<!-- Gridder navigation -->
+                <ul class="gridder">
 
-            <figure>
-                <img src="images/headshot2.png" alt="headshot" title="headshot"/>
-                <figcaption>Teddi is a recent graduate from the University of Florida.</figcaption>
-            </figure>
+                     <!-- You can load specify which content is loaded by specifying the #ID of the div where the content is  -->
+                    <li class="gridder-list" data-griddercontent="#content1">
+                        <img src="http://placehold.it/600x400" />
+                    </li>
+                    <li class="gridder-list" data-griddercontent="#content2">
+                        <img src="http://placehold.it/600x400" />
+                    </li>
+                    <li class="gridder-list" data-griddercontent="#content3">
+                        <img src="http://placehold.it/600x400" />
+                    </li>
 
-            <article class="about-article-mobile">
-            <h2>About Me</h2>
-            <p>Thanks for dropping by! My name is Teddi and ever since I can remember, I've had a passion for storytelling. In hopes of turning that passion into a profession, I obtained my Bachelor's degree in Public Relations from the University of Florida in the spring of 2019.</p>
+                    <!-- You can also load html/ajax pages by replacing the #ID with a URL -->
+                    <li class="gridder-list" data-griddercontent="/content.html">
+                        <img src="http://placehold.it/600x400" />
+                    </li>
+                </ul>
 
-            <p>Four years, 2,368 cups of coffee, and one degree later, I was still yearning for more. So, I decided to continue my education and pursue a Master's degree in Mass Communication with a Specialization in Web Design. Long story short, my goal is to continue telling stories through the creation of written, graphic and web-based content in the digital marketing sector.</p>
+                <!-- Gridder content -->
+                <div id="content1" class="gridder-content"> Content goes here... </div>
+                <div id="content2" class="gridder-content"> Content goes here... </div>
+                <div id="content3" class="gridder-content"> Content goes here... </div>
 
-            <p>To see more of what I do, what I've done, or to get in touch, check out my other pages!</p>
-
-            </article>
             </section>
 
             <aside class="buttons-mobile">
@@ -77,7 +87,7 @@
 
             <aside class="buttons-desktop">
 
-            <p><a href="design.html">Design</a></p>
+            <p><a href="about.html">About</a></p>
             <p><a href="#">Resume</a></p>
             <p><a href="#">Contact</a></p>
 

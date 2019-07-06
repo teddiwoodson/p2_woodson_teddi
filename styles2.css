@@ -127,7 +127,7 @@ figure {
     flex-direction: column;
     justify-content: center;
 }
-img {
+.headshot img {
     max-width: 50%;
     border-radius: 100%;
     border-style: solid;
@@ -291,7 +291,7 @@ footer p {
         color: white;
         align-content: center;
     }
-    img {
+    .headshot img {
         max-width: 80%;
         padding: 0;
     }
