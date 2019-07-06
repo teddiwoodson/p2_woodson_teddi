@@ -209,7 +209,7 @@ footer p {
 
 /*------ Start 680px media query-----*/
 @media (min-width: 680px) {
-/*------------------start nav-----------------*/     
+/*------------------start nav-----------------*/
     .about-site{
     width: 100%;
     background-size: cover;
@@ -251,7 +251,7 @@ footer p {
     ul li:hover {
         text-decoration: underline;
     }
-/*------------------End nav-----------------*/   
+/*------------------End nav-----------------*/
     header {
         padding-top: 2%;
     }
@@ -266,13 +266,13 @@ footer p {
         padding-top: 2%;
     }
     p {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     section article p {
     padding: 3% 3% 0% 3%;
 }
     article {
-        max-width: 50%;
+        max-width: 60%;
         padding-right: 5%;
     }
     section {
@@ -292,13 +292,13 @@ footer p {
         align-content: center;
     }
     img {
-        max-width: 65%;
+        max-width: 80%;
         padding: 0;
     }
     .buttons-mobile {
         display: none;
     }
-    .buttons-desktop {  
+    .buttons-desktop {
         display:flex;
         align-content: center;
         justify-content: space-around;
@@ -350,7 +350,7 @@ footer p {
         padding-left: 5%;
         padding-right: 5%;
     }
-} 
+}
 /*------ End 680px media query-----*/
 
 /*------ Start 860px media query-----*/

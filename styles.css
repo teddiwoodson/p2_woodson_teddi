@@ -137,7 +137,7 @@ img {
     display: none;
 }
 .buttons-mobile p {
-  font-family: 'Roboto Slab', serif;  
+  font-family: 'Roboto Slab', serif;
 }
 .buttons-mobile a {
     background-color: #2E5A7B;
@@ -196,7 +196,7 @@ footer p {
 
 /*------ Start 720px media query-----*/
 @media (min-width: 720px) {
-/*------------------start nav-----------------*/     
+/*------------------start nav-----------------*/
     header{
         width: 95%;
         display: flex;
@@ -234,7 +234,7 @@ footer p {
     ul li:hover {
         text-decoration: underline;
     }
-/*------------------End nav-----------------*/   
+/*------------------End nav-----------------*/
     h1 {
         font-size: 1.5rem;
     }
@@ -291,7 +291,7 @@ footer p {
     .buttons-mobile {
         display: none;
     }
-    .buttons-desktop {  
+    .buttons-desktop {
         display:flex;
         align-content: center;
         justify-content: space-around;
@@ -344,7 +344,7 @@ footer p {
         padding-left: 5%;
         padding-right: 5%;
     }
-} 
+}
 /*------ End 720px media query-----*/
 
 /*------ Start 860px media query-----*/
@@ -361,7 +361,7 @@ footer p {
     .welcome p{
         font-size: 1.5rem;
     }
-    .buttons-desktop {  
+    .buttons-desktop {
         margin-top: 28%;
     }
 }
@@ -379,7 +379,7 @@ footer p {
 /*------ End 900px media query-----*/
 /*------ Start 975px media query-----*/
 @media (min-width:975px) {
-    .buttons-desktop {  
+    .buttons-desktop {
         margin-top: 25%;
     }
     .buttons-desktop p {
@@ -395,7 +395,6 @@ footer p {
         font-size: 1.5rem;
     }
 }
-}
 /*------ End 975px media query-----*/
 /*------ Start 1050px media query-----*/
 @media (min-width:1050px) {
@@ -407,10 +406,10 @@ footer p {
     }
 }
 /*------ End 900px media query-----*/
-    
+
 /*------ Start 1100px media query-----*/
 @media (min-width:1100px) {
-    .buttons-desktop {  
+    .buttons-desktop {
         margin-top: 20%;
     }
 }
