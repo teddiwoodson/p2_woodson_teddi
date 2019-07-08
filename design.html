@@ -13,9 +13,13 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="js/html5shiv-printshiv.min.js"></script>
+    <script src="js/html5shiv-printshiv.min.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="dist/css/jquery.gridder.min.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="demo.css" />
+
 
 	</head>
 
@@ -24,50 +28,219 @@
         <header>
         <div class="nav">
 
-        <h1><a href="index.html">Teddi Woodson</a></h1>
+        <h1>Teddi Woodson</h1>
             <button class="hamburger">&#9776;</button>
             <button class="cross">&#735;</button>
 
              <div class="menu">
                 <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="design.html">Design</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+									<li><a class="navigation" href="index.html">Home</a></li>
+										<li><a class="navigation" href="about.html">About</a></li>
+                    <li><a class="navigation" href="design.html">Design</a></li>
+                    <li><a class="navigation" href="resume.html">Resume</a></li>
+                    <li><a class="navigation" href="contact.html">Contact</a></li>
+
                 </ul>
             </div>
 
             <div class="desktop-menu">
                 <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="design.html">Design</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="resume.html">Contact</a></li>
+                    <li><a class="navigation" href="index.html">Home</a></li>
+										<li><a class="navigation" href="about.html">About</a></li>
+                    <li><a class="navigation" href="design.html">Design</a></li>
+                    <li><a class="navigation" href="resume.html">Resume</a></li>
+                    <li><a class="navigation" href="resume.html">Contact</a></li>
                 </ul>
             </div>
         </div>
         </header>
 
         <main class="site-content">
-            <section>
 
-            </section>
+				<h2>Design</h2>
 
-            <aside class="buttons-mobile">
+        <div class="container">
 
-            <p><a href="design.html">Design</a></p>
-            <p><a href="resume.html">Resume</a></p>
-            <p><a href="resume.html">Contact</a></p>
+            <ul class="gridder">
+                <li class="gridder-list" data-griddercontent="#gridder-content-1">
+                    <img src="images/thumbimage1.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-2">
+                    <img src="images/thumbimage2.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-3">
+                    <img src="images/thumbimage13.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-4">
+                    <img src="images/thumbimage4.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-5">
+                    <img src="images/thumbimage5.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-6">
+                    <img src="images/thumbimage6.jpg" class="img-fluid">
+                </li>
+                <li class="gridder-list" data-griddercontent="#gridder-content-7">
+                    <img src="images/thumbimage7.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-8">
+                    <img src="images/thumbimage8.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-9">
+                    <img src="images/thumbimage9.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-10">
+                    <img src="images/thumbimage10.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-11">
+                    <img src="images/thumbimage11.jpg" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-12">
+                    <img src="images/thumbimage12.jpg" class="img-fluid">
+                </li>
+            </ul>
 
-            </aside>
 
-            <aside class="buttons-desktop">
+            <div id="gridder-content-1" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image1.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Arts in Medicine Flyer</h2>
+                        <p>This flyer was created during my internship with the Center for Arts in Medicine at the University of Florida.
+                          The flyer was intended to inform eligible students about various programs offered by the center.
+                          For this design, I used elements that coincide with both the Center's and the university's branding guidelines.
+                          The photos were provided to me for use by the Center for Arts in Medicine at the University of Florida.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-2" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image2.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Arts in Medicine Poster</h2>
+                        <p>This poster was also created during my internship with the Center for Arts in Medicine at the University of Florida.
+                          The flyer was intended to inform eligible students about various programs offered by the center.
+                          For this design, I used elements that coincide with both the Center's and the university's branding guidelines.
+                          The photos were provided to me for use by the Center for Arts in Medicine at the University of Florida.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-3" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image13.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Magazine Mockup</h2>
+                        <p>I designed this spread as an assignment during undergrad. The photos were provided for my by my professor and were intended for education use. For this assignment, we were required to do a magazine spread covering the impact that Hurricane Maria had on Puerto Rico.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-4" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image4.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Nonprofit Pamphlet</h2>
+                        <p>This is a sample of a pamphlet I designed for a class in my graduate program. The photos were were obtained from Unsplash.com and were intended for education use. This assignment required us to choose a nonprofit organization and create a 10-page book providing information about the organization as well as incorporating various design elements.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-5" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image5.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Original Portfolio Website</h2>
+                        <p>This is a screenshot of my original portfolio website which demonstrates some of my coding ability. The site includes jquery pluging, css styling and HTML5.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-6" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image6.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Style Guide</h2>
+                        <p>This is a sample of a style guide I designed for my current portfolio website. I have created multiple style and brand guides in order to create cohesive content. This page included colors used, goals and potential textures. Subsequent pages included website mock-ups and an inspiration board for the theme of the site.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-7" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image7.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Magazine Cover Redesign</h2>
+                        <p>I designed this magazine cover as an assignment for an undergradate class. The photos were obtained from unsplash.com and were intended for educational use. For this assignment, we were required to redesign various elements of a magazine and it's website. This magazine was intended to be a winter issue. The following works are all part of this magazine redesign.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-8" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image8.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Magazine Spread Design</h2>
+                        <p>I designed this magazine spread as an assignment for an undergradate class. The photos used are not mine, but are intended for educational use. For this assignment, we were required to redesign various elements of a magazine and it's website. This magazine spread was intended to be a winter issue and was based upon Reese Witherspoon's booklist recommendations.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-9" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image9.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Landing Page Mockup</h2>
+                        <p>I designed this landing page as an assignment for an undergradate class. The photos used are not mine, but are intended for educational use. For this assignment, we were required to redesign various elements of a magazine and it's website. This landing page was intended to completely rethink the Booklist website in order to make it modern and welcoming.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-10" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image10.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Content Page Mockup</h2>
+                        <p>I designed this content page as an assignment for an undergradate class. The photos used are not mine, but are intended for educational use. For this assignment, we were required to redesign various elements of a magazine and it's website. This content page was designed to showcase one of the feature stories in the magazine.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-11" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image11.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Plant Drop Poster</h2>
+                        <p>This flyer was designed for an assignment. It's intent was to promote an event that took place on the University of Florida campus.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-12" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/image12.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Plant Drop Poster 2</h2>
+                        <p>This flyer was designed for an assignment. It's intent was to promote an event that took place on the University of Florida campus.</p>
+                    </div>
+                </div>
+            </div>
 
-            <p><a href="about.html">About</a></p>
-            <p><a href="resume.html">Resume</a></p>
-            <p><a href="contact.html">Contact</a></p>
-
-            </aside>
+        </div>
 
 
         </main>
@@ -79,6 +252,38 @@
         <script src="js/hamburger.js"></script>
 				<script src="js/backstretch.js"></script>
 				<script src="js/main.js"></script>
+				<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+				<script src="dist/js/jquery.gridder.js"></script>
+				<script>jQuery(document).ready(function ($) {
+
+				    // REMOVE AND ADD CLICK EVENT
+				    $('.doAddItem').on('click', function () {
+				        $(".gridder").data('gridderExpander').gridderAddItem('TEST');
+				    });
+
+				    // Call Gridder
+				    $(".gridder").gridderExpander({
+				        scrollOffset: 60,
+				        scrollTo: "panel", // "panel" or "listitem"
+				        animationSpeed: 400,
+				        animationEasing: "easeInOutExpo",
+				        onStart: function () {
+				            console.log("Gridder Inititialized");
+				        },
+				        onExpanded: function (object) {
+				            console.log("Gridder Expanded");
+				        },
+				        onChanged: function (object) {
+				            console.log("Gridder Changed");
+				        },
+				        onClosed: function () {
+				            console.log("Gridder Closed");
+				        }
+				    });
+				});
+			</script>
 
 	</body>
 

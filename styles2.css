@@ -118,6 +118,10 @@ main {
 section article p {
     padding: 6% 6% 0% 6%;
 }
+.container {
+	width: 100%;
+	align-items: center;
+}
 .about-article-mobile {
     padding-bottom: 6%;
 }
@@ -164,7 +168,7 @@ section article p {
 .resume-p-desktop {
 	display: none;
 }
-img {
+.resume-img img {
 	max-width: 100%;
 	justify-content: center;
 }
@@ -227,6 +231,7 @@ footer {
     background-color: #2E5A7B;
     color: white;
     padding: 5%;
+		width:100%;
 }
 footer p {
     font-family: 'Roboto Slab', serif;
@@ -400,7 +405,7 @@ form {
         display: none;
     }
     .desktop-menu {
-        width: 50%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         text-align: right;
@@ -424,11 +429,12 @@ form {
         padding-top: 2%;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding-bottom: 5%;
     }
     header h2, p {
         display: block;
+				width: 100%;
     }
     h2 {
         padding-top: 2%;
@@ -560,6 +566,11 @@ form {
 			padding-bottom: 2%;
 			font-size: .8rem;
 		}
+		.desktop-menu li a {
+				font-size: .9rem;
+				text-align: left;
+
+		}
 }
 /*------ End 680px media query-----*/
 /*------ Start 720px media query-----*/
@@ -592,10 +603,10 @@ form {
 /*------ Start 860px media query-----*/
 @media (min-width:860px) {
     .desktop-menu li a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 		.form-container {
 			width: 40%;
@@ -613,7 +624,7 @@ form {
 /*------ Start 900px media query-----*/
 @media (min-width:900px) {
      h1 {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
     section {
         padding-top: 1%;
@@ -644,5 +655,8 @@ form {
 		.contact-footer {
 			margin-top: 5%;
 		}
+		.desktop-menu li a {
+        font-size: 1.2rem;
+    }
 }
 /*------ End 900px media query-----*/
