@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto Slab', serif;
+  display: flex;
 }
 .gridder{
   margin:0px;
@@ -59,7 +60,6 @@ ul li {
  ul li a {
      text-decoration: none;
      font-family: 'Roboto Slab', serif;
-     font-size: 1rem;
      color: #2E5A7B;
  }
  h1 a:hover{
@@ -88,6 +88,9 @@ ul li {
    font-weight: bold;
     line-height: normal;
  }
+ .nav {
+   display: block;
+ }
 @media (min-width:400px) {
   h1 {
      font-size: 2.5rem;
@@ -99,51 +102,47 @@ ul li {
        }
 }
 @media (min-width: 680px) {
-         h1 {
-             font-size: 1.5rem;
-             padding-bottom: 5%;
-         }
-         .about-site{
-         width: 100%;
-         background-size: cover;
+     h1 {
+         font-size: 1rem;
+         padding-bottom: 5%;
      }
-         header{
-             width: 95%;
-             display: flex;
-             flex-direction:row;
-             justify-content: center;
-              align-items: baseline;
-         }
-         .nav {
-             width: 95%;
-             display: flex;
-             flex-direction: row;
-             justify-content: space-around;
-             align-items: baseline;
-             margin: 0;
-             padding: 0;
-         }
-         .menu, .hamburger, .cross {
-             display: none;
-         }
-         .desktop-menu {
-             width: 50%;
-             display: flex;
-             flex-direction: column;
-             text-align: right;
-         }
-        ul li {
-            display: inline;
-         }
-         ul li a {
-             text-decoration: none;
-             font-family: 'Roboto Slab', serif;
-             font-size: 1rem;
-             color: #2E5A7B;
-         }
-         ul li:hover {
-             text-decoration: underline;
-         }
+     header{
+         width: 95%;
+         display: flex;
+         flex-direction:row;
+         justify-content: center;
+          align-items: baseline;
+     }
+     .nav {
+         width: 95%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         align-items: baseline;
+     }
+     .menu, .hamburger, .cross {
+         display: none;
+     }
+     .desktop-menu {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         text-align: right;
+     }
+    ul li {
+        display: inline;
+        text-align: right;
+        padding-right: 4%;
+     }
+     ul li a {
+         text-decoration: none;
+         font-family: 'Roboto Slab', serif;
+         font-size: 1rem;
+         color: #2E5A7B;
+     }
+     ul li:hover {
+         text-decoration: underline;
+     }
 }
 @media (min-width: 720px) {
          h1 {
@@ -152,14 +151,15 @@ ul li {
 }
 @media (min-width: 860px) {
   h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
   }
 }
 @media (min-width:900px) {
      h1 {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
   }
+
   body{
       width: 100%;
       display: flex;
@@ -172,7 +172,7 @@ ul li {
       width: 100%;
       display:flex;
       flex-direction: column;
-      align-items: center;
+      align-content: center;
       min-height: 100vh;
       background-color: #B7CCDB;
   }
@@ -181,11 +181,48 @@ ul li {
   }
   header{
       width:100%;
-      display: flex;
-      flex-direction:row;
-      align-items: baseline;
-      justify-content: center;
+      align-content: center;
+}
+      .hamburger{
+        background:none;
+        position:absolute;
+        top:0;
+        right:0;
+        line-height:45px;
+        padding:5px 15px 0px 15px;
+        color:#2E5A7B;
+        border:0;
+        font-size:1.4em;
+        font-weight:bold;
+        cursor:pointer;
+        outline:none;
+        z-index:10000000000000;
       }
+      .cross{
+        background:none;
+        position:absolute;
+        top:0px;
+        right:0;
+        padding:7px 15px 0px 15px;
+        color:#2E5A7B;
+        border:0;
+        font-size:3em;
+        line-height:65px;
+        font-weight:bold;
+        cursor:pointer;
+        outline:none;
+        z-index:10000000000000;
+      }
+      .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#ffffff;  position:absolute; text-align:center; font-size:12px;}
+      .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+      .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#B7CCDB 1px solid;}
+      .menu li:hover{display: block;    background:#B7CCDB; padding:15px 0 15px 0; border-bottom:#ffffff 1px solid;}
+      .menu ul li a { text-decoration:none;  margin: 0px; color:#2E5A7B;}
+      .menu ul li a:hover {  color: #2E5A7B; text-decoration:none;}
+      .menu a{text-decoration:none; color:#2E5A7B;}
+      .menu a:hover{text-decoration:none; color:#ffffff;}
+      header{display:inline-block; font-size:12px;}
+
     .site-content h2 {
       text-align: center;
       color: #2E5A7B;
@@ -194,5 +231,8 @@ ul li {
     .container h2 {
       color: white;
       text-align: left;
+    }
+    .container {
+      margin-bottom: 5%;
     }
 /*# sourceMappingURL=demo.css.map */
